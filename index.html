@@ -12,60 +12,70 @@
 <body>
 
   <!-- Nav -->
-  <section class="section-navigation">
+  <section class="section--navigation">
     <div class="container">
 
       <nav class="nav">
-        <ul>
-          <li><a class="nav_link" href="#">Home</a></li>
-          <li><a class="nav_link" href="#">Portfolio</a></li>
-          <li><a class="nav_link" href="#">About Us</a></li>
-          <li><a class="nav_link" href="#">Contact</a></li>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Portfolio</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">About Us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Contact</a>
+          </li>
         </ul>
       </nav>
 
-    </div>
-  </section>
+    </div> <!-- /.container -->
+  </section> <!-- /.section-navigation -->
 
   <!-- Header -->
-  <section class="section section-header">
+  <header class="section section--header">
     <div class="container">
 
-      <div class="section__inner">
-        <div class="inner__content">
-          <h1 class="content__title">
+      <div class="header">
+        <div class="header__content">
+          <h1 class="header__title">
             our strong
             organaisation
           </h1>
-          <p class="content__text">
+          <p class="header__text">
             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
           </p>
-          <button class="btn-main"><a href="#">Contact Us</a></button>
+          <button class="btn btn--header">Contact Us</button>
         </div>
-        <div class="inner__video">
+
+        <div class="header__content header__video">
           <img src="https://via.placeholder.com/550x360" alt="">
         </div>
       </div>
 
     </div> <!-- /.container -->
-  </section> <!-- /.section-header -->
+  </header> <!-- /.section-header -->
 
   <!-- Provide -->
   <section class="section section-provide">
     <div class="container">
 
-      <div class="provide__inner">
-        <div class="inner__content">
-          <h2 class="content__title content__title-less">
+      <div class="header">
+        <div class="header__content header__content--less">
+          <h2 class="header__title">
             do you know we can
             provide for you ?
           </h2>
-          <p class="content__text">
+          <p class="header__text">
             Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
           </p>
-          <button class="btn-secondary"><a href="#">Learn More</a></button>
+          <button class="btn btn--provide">Learn More</button>
         </div>
-        <div class="inner__features">
+
+        <div class="features">
 
           <div class="features__item">
             <div class="features__icon">
@@ -127,35 +137,35 @@
   <section class="section section-products">
     <div class="container">
 
-      <div class="inner__content inner__content-center">
-        <h2 class="content__title content__title-less">
+      <div class="header__content header__content--less header__content--center">
+        <h2 class="header__title ">
           feature products
         </h2>
-        <p class="content__text content__text-center">
+        <p class="header__text">
           Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.
         </p>
-        <hr class="content__line content__line-center">
+        <hr class="header__line">
       </div>
       <!--/.inner__content -->
 
       <ul class="products__nav">
-        <li>All</li>
-        <li>print template</li>
-        <li>web template</li>
-        <li>user interface</li>
-        <li>mock-up</li>
+        <li class="products__link">All</li>
+        <li class="products__link">print template</li>
+        <li class="products__link">web template</li>
+        <li class="products__link">user interface</li>
+        <li class="products__link">mock-up</li>
       </ul>
 
       <div class="products__wrapper">
 
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
-        <img src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
 
       </div> <!-- /.products__wrapper -->
 
@@ -166,14 +176,14 @@
   <section class="section section-team">
     <div class="container">
 
-      <div class="inner__content">
-        <h2 class="content__title content__title-less">
+      <div class="header__content header__content--less">
+        <h2 class="header__title ">
           Meet our team
         </h2>
-        <p class="content__text">
+        <p class="header__text">
           Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.
         </p>
-        <hr class="content__line">
+        <hr class="header__line">
       </div>
 
       <div class="employers">
@@ -235,27 +245,104 @@
           Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.
         </div>
         <div class="subscribe__form">
-          <input type="text">
-          <button class="btn-subscribe" type="submit"><a href="#">Subscribe</a></button>
+          <div class="form__input">
+            <input type="email" placeholder="Email Address...">
+          </div>
+          <div class="form__button">
+            <button class="btn-subscribe" type="submit"><a href="#">Subscribe</a></button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Form -->
-  <section class="section section-form">
+  <!-- Contact -->
+  <section class="section section-contact">
     <div class="container">
-      section-form
-    </div>
-  </section>
+
+      <div class="inner__content inner__content-bigger">
+        <h2 class="content__title content__title-less">
+          get in touch
+        </h2>
+        <p class="content__text content__text-bigger">
+          Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.
+        </p>
+        <hr class="content__line">
+      </div>
+
+      <div class="contact__content">
+        <div class="contact__form">
+
+          <div class="xuyblyat">
+
+            <div class="form__input">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="form__input">
+              <input type="email" placeholder="Your Mail">
+            </div>
+
+          </div>
+
+          <div class="form__input">
+            <textarea name="" id="" cols="30" rows="10">Type your message</textarea>
+          </div>
+          <div class="form__button">
+            <button class="btn-full " type="submit"><a href="#">Send Message</a></button>
+          </div>
+        </div>
+
+        <div class="contact__info">
+          <div class="info__content">
+
+            <div class="info__title">
+              contact info
+            </div>
+
+            <div class="contact__adress">
+              <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,</p>
+              <p>Bangladesh</p>
+            </div>
+
+            <div class="contact__email">
+              redwan@deviserweb.com
+            </div>
+
+            <div class="contact__tel"></div>
+            (+88) 017 617 46373
+          </div>
+        </div>
+      </div>
+    </div> <!-- /.container -->
+  </section> <!-- /.section-contact -->
 
   <!-- Footer -->
-  <section class="section section-footer">
+  <footer class="section section-footer">
     <div class="container">
-      section-footer
+      <div class="footer__inner">
+        <div class="copyright">
+          © Copyright @Junaed 2016, All rights reserved.
+        </div>
+
+        <ul class="footer__nav">
+          <li><a href="">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li><a href="">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li><a href="">
+              <ion-icon name="logo-googleplus"></ion-icon>
+            </a></li>
+          <li><a href="">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </footer>
   <script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
+
 </body>
 
 </html>

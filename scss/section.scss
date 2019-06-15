@@ -1,0 +1,22 @@
+/* Section */
+.section {
+  padding: 110px 0;
+
+  &-provide {
+    padding-bottom: 60px;
+  }
+
+  &-team {
+    padding-top: 0;
+  }
+
+  &-subscribe {
+    background-color: antiquewhite;
+    padding: 140px;
+  }
+
+  &-footer {
+    padding: 55px 0 25px;
+    background: #313030;
+  }
+}

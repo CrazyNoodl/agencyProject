@@ -1,0 +1,19 @@
+/* Products */
+.products__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px; }
+
+.products__link {
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-right: 60px; }
+
+.products__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.products__img {
+  margin-bottom: 20px; }

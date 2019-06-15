@@ -1,0 +1,27 @@
+/* Provide */
+.provide__inner {
+  display: flex; }
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between; }
+
+.features__item {
+  width: calc(50% - 25px);
+  margin-bottom: 50px; }
+
+.features__icon {
+  font-size: 40px;
+  color: red;
+  margin-bottom: 25px;
+  line-height: 0; }
+
+.features__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 17px; }
+
+.features__text {
+  line-height: 1.7; }

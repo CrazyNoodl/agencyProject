@@ -1,0 +1,13 @@
+/* Section */
+.section {
+  padding: 110px 0; }
+  .section-provide {
+    padding-bottom: 60px; }
+  .section-team {
+    padding-top: 0; }
+  .section-subscribe {
+    background-color: antiquewhite;
+    padding: 140px; }
+  .section-footer {
+    padding: 55px 0 25px;
+    background: #313030; }
