@@ -1,6 +1,6 @@
-/* Provide */
-.provide__inner {
+.features__container {
   display: flex;
+  justify-content: space-between;
 }
 
 .features {
@@ -10,25 +10,25 @@
   justify-content: space-between;
 }
 
-.features__item {
+.features__box {
   width: calc(50% - 25px);
   margin-bottom: 50px;
 }
 
-.features__icon {
+.box__icon {
   font-size: 40px;
   color: red;
   margin-bottom: 25px;
   line-height: 0;
 }
 
-.features__title {
+.box__title {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 17px;
 }
 
-
-.features__text {
+.box__text {
   line-height: 1.7;
 }
+

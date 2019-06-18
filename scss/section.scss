@@ -2,20 +2,33 @@
 .section {
   padding: 110px 0;
 
-  &-provide {
+  &--navigation {
+    padding-top: 30px;
+    background-color: #f6f2f2;
+  }
+
+  &--header {
+    background-color: #f6f2f2;
+  }
+
+  &--features {
     padding-bottom: 60px;
   }
 
-  &-team {
+  &--team {
     padding-top: 0;
   }
 
-  &-subscribe {
+  &--subscribe {
     background-color: antiquewhite;
     padding: 140px;
   }
 
-  &-footer {
+  &--contact {
+    position: relative;
+  }
+
+  &--footer {
     padding: 55px 0 25px;
     background: #313030;
   }

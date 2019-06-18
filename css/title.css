@@ -1,0 +1,84 @@
+.content_center {
+  text-align: center; }
+
+.features__content {
+  max-width: 500px; }
+
+.products__content {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.team__content {
+  max-width: 450px; }
+
+.contact__content {
+  max-width: 725px; }
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 42px; }
+
+.header__title {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: black; }
+
+.features__title {
+  margin-bottom: 45px; }
+
+.products__title {
+  margin-bottom: 30px; }
+
+.team__title {
+  margin-bottom: 35px; }
+
+.employers__title {
+  font-weight: 600;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8); }
+
+.subscribe__title {
+  text-transform: none;
+  color: white;
+  margin-bottom: 35px; }
+
+.contact__title {
+  margin-bottom: 45px; }
+
+.content__title {
+  font-size: 18px;
+  margin-bottom: 30px; }
+
+.header__text {
+  max-width: 500px;
+  margin-bottom: 45px; }
+
+.features__text {
+  margin-bottom: 55px; }
+
+.subscribe__text {
+  color: white;
+  margin-bottom: 60px; }
+
+.line {
+  margin: 30px 0 80px;
+  border: none;
+  color: red;
+  background-color: red;
+  height: 2px;
+  max-width: 130px; }
+
+.line_center {
+  margin: 30px auto 80px; }
+
+.info__content {
+  color: rgba(255, 255, 255, 0.8); }
+
+.content__adress {
+  margin-bottom: 20px; }
+
+.content__email {
+  margin-bottom: 20px; }

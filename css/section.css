@@ -1,13 +1,20 @@
 /* Section */
 .section {
   padding: 110px 0; }
-  .section-provide {
+  .section--navigation {
+    padding-top: 30px;
+    background-color: #f6f2f2; }
+  .section--header {
+    background-color: #f6f2f2; }
+  .section--features {
     padding-bottom: 60px; }
-  .section-team {
+  .section--team {
     padding-top: 0; }
-  .section-subscribe {
+  .section--subscribe {
     background-color: antiquewhite;
     padding: 140px; }
-  .section-footer {
+  .section--contact {
+    position: relative; }
+  .section--footer {
     padding: 55px 0 25px;
     background: #313030; }
