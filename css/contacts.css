@@ -3,6 +3,22 @@
   width: 100%;
   justify-content: space-between; }
 
+.contact__outter {
+  position: relative; }
+
+.contact__outter:after {
+  display: block;
+  position: absolute;
+  background: #313030;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 61%;
+  right: 0; }
+
+.contact__info {
+  width: 42%; }
+
 .contact__form {
   display: flex;
   flex-direction: column;
@@ -40,9 +56,9 @@ textarea {
   margin-bottom: 60px; }
 
 .contact__info {
-  padding: 0 80px;
-  background: #2d2d2d;
+  padding-left: 80px;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }

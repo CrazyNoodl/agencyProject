@@ -47,11 +47,11 @@
         <p class="text header__text">
           Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.
         </p>
-        <button class="btn header__btn">Contact Us</button>
+        <a class="btn header__btn">Contact Us</a>
       </div>
 
-      <div class="header__content header__video">
-        <img src="https://via.placeholder.com/550x360" alt="">
+      <div class="header__content">
+        <iframe class="header__video" width="560" height="360" src="https://www.youtube.com/embed/8z4FI94wXAE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
     </div> <!-- /.container -->
@@ -69,7 +69,11 @@
         <p class="text features__text">
           Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.
         </p>
-        <button class="btn features__btn">Learn More</button>
+
+        <a class="btn features__btn" href="#">
+          Learn More
+        </a>
+
       </div>
 
       <div class="features">
@@ -127,10 +131,10 @@
     </div> <!-- /.container -->
   </section> <!-- /.section--features -->
 
-  <hr>
+  <hr> <!-- Line -->
 
   <!-- Products -->
-  <section class="section section--products">
+  <main class="section section--products">
     <div class="container products__container">
 
       <div class="content header__content content_center">
@@ -143,29 +147,43 @@
         <hr class="line line_center">
       </div>
 
-      <ul class="products__nav">
-        <li class="products__link">All</li>
-        <li class="products__link">print template</li>
-        <li class="products__link">web template</li>
-        <li class="products__link">user interface</li>
-        <li class="products__link">mock-up</li>
+      <ul class="controls products__nav">
+        <li class="products__link" data-filter="all">All</li>
+        <li class="products__link" data-filter=".category-a">print template</li>
+        <li class="products__link" data-filter=".category-b">web template</li>
+        <li class="products__link" data-filter=".category-c">user interface</li>
+        <li class="products__link" data-filter=".category-d">mock-up</li>
       </ul>
 
-      <div class="products__wrapper">
-
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-        <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
-
+      <div class="container-filter products__wrapper">
+        <div class="mix category-a products__item" data-order="1">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-b products__item" data-order="2">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-c products__item" data-order="3">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-d products__item" data-order="8">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+      <div class="mix category-a products__item" data-order="5">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-b products__item" data-order="6">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-c products__item" data-order="7">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
+        <div class="mix category-b products__item" data-order="8">
+          <img class="products__img" src="https://via.placeholder.com/300x300" alt="">
+        </div>
       </div>
 
     </div> <!-- /.container -->
-  </section> <!-- /.section--products -->
+  </main> <!-- /.section--products -->
 
   <!-- Team -->
   <section class="section section--team">
@@ -276,55 +294,60 @@
         </p>
         <hr class="line">
       </div>
+    </div> <!-- /.container -->
 
-      <div class="contact__inner">
-        <div class="contact__form">
+    <div class="contact__outter">
+      <div class="container">
+        <div class="contact__inner">
+          <div class="contact__form">
 
-          <div class="two__input">
+            <div class="two__input">
 
-            <div class="form__input">
-              <input type="text" placeholder="Name">
+              <div class="form__input">
+                <input type="text" placeholder="Name">
+              </div>
+              <div class="form__input">
+                <input type="email" placeholder="Your Mail">
+              </div>
+
             </div>
-            <div class="form__input">
-              <input type="email" placeholder="Your Mail">
-            </div>
 
+            <div class="form__input form__input_area">
+              <textarea name="" id="" cols="30" rows="10">Type your message</textarea>
+            </div>
+            <div class="form__button">
+              <button class="btn btn_full" type="submit">Send Message</button>
+            </div>
           </div>
 
-          <div class="form__input form__input_area">
-            <textarea name="" id="" cols="30" rows="10">Type your message</textarea>
-          </div>
-          <div class="form__button">
-            <button class="btn btn_full" type="submit">Send Message</button>
-          </div>
-        </div>
+          <div class="contact__info">
+            <div class="info__content">
 
-        <div class="contact__info">
-          <div class="info__content">
+              <h3 class="title content__title">
+                contact info
+              </h3>
 
-            <h3 class="title content__title">
-              contact info
-            </h3>
+              <div class="adress content__adress">
+                <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,</p>
+                <p>Bangladesh</p>
+              </div>
 
-            <div class="adress content__adress">
-              <p>Jalalabad 24 / A, Ambaarkhana, Sylhet,</p>
-              <p>Bangladesh</p>
+              <div class="email content__email">
+                redwan@deviserweb.com
+              </div>
+
+              <div class="tel content__tel"></div>
+              (+88) 017 617 46373
             </div>
-
-            <div class="email content__email">
-              redwan@deviserweb.com
-            </div>
-
-            <div class="tel content__tel"></div>
-            (+88) 017 617 46373
           </div>
         </div>
       </div>
-    </div> <!-- /.container -->
+    </div>
   </section> <!-- /.section--contact -->
 
   <!-- Footer -->
   <footer class="section section--footer">
+
     <div class="container">
       <div class="footer__inner">
         <div class="copyright">
@@ -351,6 +374,9 @@
 
   <!-- JS  -->
   <script src="https://unpkg.com/ionicons@4.5.9-1/dist/ionicons.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/script.js"></script>
+
 
 </body>
 
