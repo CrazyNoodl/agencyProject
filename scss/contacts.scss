@@ -1,9 +1,20 @@
-.contact__inner {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.contact__content {
+  max-width: 725px;
+
+  @include tablet {
+    max-width: 460px;
+  }
+
 }
 
+.contact__title {
+  margin-bottom: 45px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+}
 
 .contact__outter {
   position: relative;
@@ -16,49 +27,57 @@
   content: "";
   top: 0;
   bottom: 0;
-  left: 61%;
+  left: calc(100% / 2 + (130px * 0.58 + 80px));
   right: 0;
 }
 
-.contact__info {
-  width: 42%;
+.contact__inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .contact__form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 58%;
-}
-
-.two__input {
   display: flex;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .form__input {
-  flex: 1;
-  padding-right: 60px;
+  max-width: 340px;
+  width: 45%;
+  margin-bottom: 60px;
 
-  &:last-child {
-    padding: 0;
+  @include tablet {
+     margin-bottom: 45px;
   }
+
 }
 
-.form__input_area {
-  padding-right: 0;
-}
-
-input {
+.form__name,
+.form__email {
   width: 100%;
   border: none;
   font-size: 18px;
   background: #e5e5e5;
   padding: 30px 50px;
   border-radius: 10px;
+
+  &:focus {
+    color: red;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
-textarea {
+.contact-area__input {
+  width: 100%;
+}
+
+.contact__textarea {
   width: 100%;
   border: none;
   font-size: 18px;
@@ -66,13 +85,33 @@ textarea {
   padding: 30px 50px;
   border-radius: 10px;
   margin-bottom: 60px;
+  resize: none;
+
+  @include tablet {
+      margin-bottom: 45px;
+  }
+
 }
 
 .contact__info {
-  padding-left: 80px;
-  color: white;
+  width: 42%;
+  color: rgba(255, 255, 255, .8);
+  padding-left: 160px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 190px;
   z-index: 1;
+}
+
+.info__title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.info__address {
+  margin-bottom: 20px;
+}
+
+.info__email {
+  margin-bottom: 20px;
 }

@@ -1,25 +1,6 @@
-@import 'reset.scss';
-@import 'section.scss';
-@import 'content.scss';
-@import 'title.scss';
-@import 'button.scss';
-@import 'navigation.scss';
-@import 'header.scss';
-@import 'features.scss';
-@import 'products.scss';
-@import 'team.scss';
-@import 'subscribe.scss';
-@import 'contacts.scss';
-@import 'footer.scss';
-
-/* Mixins */
-@mixin main-font {
-  font-family: 'Open Sans', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
+@import 'variables';
+@import 'mixins';
+@import 'reset';
 
 body {
   @include main-font;
@@ -29,12 +10,25 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.container {
-  max-width: 1300px;
-  width: 100%;
-  padding: 0 25px;
-  margin: 0 auto;
+@import 'section';
+@import 'container';
+@import 'content';
+@import 'title';
+@import 'button';
+@import 'navigation';
+@import 'header';
+@import 'features';
+@import 'products';
+@import 'team';
+@import 'subscribe';
+@import 'contacts';
+@import 'footer';
+
+
+* {
+  box-sizing: border-box;
 }
+
 
 hr {
   border: none;
@@ -45,4 +39,3 @@ hr {
   margin: 0 auto;
   color: red;
 }
-

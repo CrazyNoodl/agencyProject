@@ -1,20 +1,36 @@
 /*Subscribe*/
+.subscribe__title {
+  text-transform: none;
+  color: white;
+  margin-bottom: 35px;
+}
+
 .subscribe__form {
   max-width: 770px;
   display: flex;
   margin: 0 auto;
+}
 
-  .form__input {
-    flex: 1;
-    padding-right: 25px;
+.subscribe__input {
+  flex: 1;
+  padding-right: 25px;
+}
 
-    input {
-      width: 100%;
-      border: none;
-      font-size: 18px;
-      background: white;
-      padding: 30px 35px;
-      border-radius: 5px;
-    }
-  }
+.subscribe__email {
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  background: white;
+  padding: 30px 35px;
+  border-radius: 5px;
+}
+
+.subscribe__text {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.subscribe__btn {
+  padding: 30px 60px;
+  text-transform: uppercase;
 }

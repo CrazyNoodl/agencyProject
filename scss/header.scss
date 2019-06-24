@@ -1,7 +1,45 @@
 /* Header */
-.container__header {
-  display: flex;
-  justify-content: space-between;
+.header__content {
+  max-width: 590px;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    text-align: center;
+    max-width: none;
+  }
+}
+
+.header__title {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: black;
+  letter-spacing: 0.1em;
+
+  @include tablet {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 800;
+  }
+}
+
+.header__text {
+  max-width: 500px;
+  margin-bottom: 45px;
+
+  @include tablet {
+    margin: 0 auto 35px;
+    max-width: 700px;
+  }
+
+}
+
+.header__btn {
+  font-weight: 700;
 }
 
 .header__video {

@@ -1,8 +1,22 @@
 /* Products*/
+.products__content {
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.products__title {
+  margin-bottom: 30px;
+}
+
 .products__nav {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 45px;
+  }
 }
 
 .products__link {
@@ -15,19 +29,35 @@
     color: red;
     cursor: pointer;
   }
+
+  &.mixitup-control-active {
+    color: red;
+  }
+
+  @include tablet {
+    font-size: 18px;
+  }
+
 }
 
 .products__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 -7px;
+  justify-content: flex-start;
+  margin: 0 -8px;
 }
 
 .products__item {
-padding: 0 7px;
+  width: 25%;
+  padding: 0 8px;
+
+  @include tablet {}
+
 }
 
 .products__img {
+  outline: 1px solid black;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 15px;
 }

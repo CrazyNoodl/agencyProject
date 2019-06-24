@@ -1,0 +1,17 @@
+/* Mixins */
+@mixin main-font {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-max-width - 1}px) {
+    @content;
+  }
+}
+
+/*@mixin mobile {
+  @media (max-width: #{$mobile-max-width - 1}px) {
+    @content;
+  }
+}*/
+

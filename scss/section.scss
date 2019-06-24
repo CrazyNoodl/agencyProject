@@ -2,12 +2,21 @@
 .section {
   padding: 110px 0;
 
+    @include tablet {
+    padding: 70px 0;
+  }
+
   &--navigation {
-    padding-top: 30px;
-    background-color: #f6f2f2;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 
   &--header {
+    padding-top: 250px;
     background-color: #f6f2f2;
   }
 
@@ -20,17 +29,29 @@
   }
 
   &--subscribe {
-    background-color: antiquewhite;
-    padding: 140px;
+    background-image: url("/img/mojave.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   &--contact {
     position: relative;
-
   }
 
   &--footer {
     padding: 55px 0 25px;
     background: #313030;
   }
+}
+
+.section--navigation.fixed {
+  background-color: #313030;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }

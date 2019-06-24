@@ -1,11 +1,22 @@
 /*team*/
+.team__content {
+  max-width: 450px;
+}
+
+.team__title {
+  margin-bottom: 35px;
+}
 
 .employers {
   display: flex;
 }
 
 .employers__photo {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
   margin-right: 75px;
+  outline: 1px solid black;
 }
 
 .employers__content {
@@ -23,6 +34,11 @@
   justify-content: space-between;
 }
 
+.employers__title {
+  font-weight: 600;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
 
 .employers__social {
   display: flex;
@@ -36,26 +52,42 @@
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   font-style: italic;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .employers__other {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 65px;
-
 }
 
 .other__item {
+  width: 25%;
   position: relative;
+  padding-right: 5px;
+  margin-bottom: 5px;
+
+  &:last-child {
+      padding-right: 0;
+  }
 }
 
+.other__img {
+  outline: 1px solid red;
+  max-width: 100%;
+  height: auto;
+}
 
-.other__item:hover .item__name {
+.other__item:hover .other__name {
   opacity: 1;
 }
 
-.item__name {
+.other__name {
   opacity: 0;
   width: 100%;
   text-align: center;
