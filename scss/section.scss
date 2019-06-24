@@ -29,10 +29,8 @@
   }
 
   &--subscribe {
-    background-image: url("/img/mojave.png");
-    background-repeat: no-repeat;
+    background: url(../img/mojave.png) center no-repeat;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
   }
 
