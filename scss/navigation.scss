@@ -25,6 +25,10 @@
      background: red;
   }
 
+  @include mobile {
+    font-size: 12px;
+  }
+
   @include mobile8p {
      padding: 25px 10px 20px;
   }

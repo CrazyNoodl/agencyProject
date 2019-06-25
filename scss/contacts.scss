@@ -76,6 +76,11 @@
     max-width: none;
     margin-bottom: 25px;
   }
+
+  @include mobilese {
+        margin-bottom: 10px;
+  }
+
 }
 
 .form__name,

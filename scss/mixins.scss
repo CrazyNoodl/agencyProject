@@ -21,3 +21,10 @@
   }
 }
 
+@mixin mobilese {
+  @media (max-width: #{$mobilese-max-width - 1}px) {
+    @content
+  }
+}
+
+

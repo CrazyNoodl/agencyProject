@@ -73,6 +73,10 @@
 
 .social__list {
   margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -99,6 +103,11 @@
   @include mobile {
     padding-top: 25px;
   }
+
+  @include mobilese {
+    justify-content: center;
+  }
+
 }
 
 .other__item {
@@ -110,12 +119,20 @@
     width: 49%;
   }
 
+  @include mobilese {
+    width: 100%;
+  }
+
 }
 
 .other__img {
   outline: 1px solid red;
   max-width: 100%;
   height: auto;
+
+  @include mobilese {
+     width: 100%;
+  }
 }
 
 .other__item:hover .other__name {
