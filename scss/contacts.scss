@@ -13,7 +13,13 @@
   @include tablet {
     margin-bottom: 30px;
   }
+}
 
+.contact__btn {
+
+  @include mobile {
+    margin-bottom: 25px;
+  }
 }
 
 .contact__outter {
@@ -29,12 +35,18 @@
   bottom: 0;
   left: calc(100% / 2 + (130px * 0.58 + 80px));
   right: 0;
+
+  @include mobile {
+    display: none;
+  }
+
 }
 
 .contact__inner {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contact__form {
@@ -42,17 +54,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @include mobile {
+    display: block;
+    width: 100%;
+  }
+
 }
 
 .form__input {
   max-width: 340px;
-  width: 45%;
+  width: 47%;
   margin-bottom: 60px;
 
   @include tablet {
-     margin-bottom: 45px;
+    margin-bottom: 45px;
   }
 
+  @include mobile {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 25px;
+  }
 }
 
 .form__name,
@@ -88,7 +111,11 @@
   resize: none;
 
   @include tablet {
-      margin-bottom: 45px;
+    margin-bottom: 45px;
+  }
+
+  @include mobile {
+    margin-bottom: 0;
   }
 
 }
@@ -101,6 +128,18 @@
   flex-direction: column;
   padding-top: 190px;
   z-index: 1;
+
+  @include tablet {
+    padding-top: 135px;
+  }
+
+  @include mobile {
+    background: #313030;
+    width: 100%;
+    justify-content: center;
+    padding: 50px;
+  }
+
 }
 
 .info__title {

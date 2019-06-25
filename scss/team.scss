@@ -9,6 +9,11 @@
 
 .employers {
   display: flex;
+
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .employers__photo {
@@ -17,6 +22,12 @@
   height: 100%;
   margin-right: 75px;
   outline: 1px solid black;
+
+  @include mobile {
+    margin-right: 0;
+    margin: 0 0 15px;
+  }
+
 }
 
 .employers__content {
@@ -32,16 +43,32 @@
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+
+  @include mobile {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
 }
 
 .employers__title {
   font-weight: 600;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.8);
+
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 .employers__social {
   display: flex;
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
 }
 
 .social__list {
@@ -64,17 +91,21 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 65px;
+
+  @include tablet {
+    padding-top: 55px;
+  }
+
+  @include mobile {
+    padding-top: 25px;
+  }
 }
 
 .other__item {
-  width: 25%;
+  width: 24%;
   position: relative;
-  padding-right: 5px;
   margin-bottom: 5px;
 
-  &:last-child {
-      padding-right: 0;
-  }
 }
 
 .other__img {

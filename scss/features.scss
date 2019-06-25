@@ -9,6 +9,9 @@
     width: 100%;
   }
 
+  @include mobile {
+    flex-wrap: wrap;
+  }
 }
 
 .features__container {
@@ -23,7 +26,7 @@
 
 .features__content {
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 
   @include tablet {
     max-width: 700px;
@@ -33,13 +36,19 @@
 
 .features__title {
   margin-bottom: 45px;
+
+  @include tablet {
+    margin-bottom: 25px;
+  }
+
 }
 
 .features__text {
   margin-bottom: 55px;
 
   @include tablet {
-    margin-bottom: 35px;
+    max-width: 550px;
+    margin: 0 auto 35px;
   }
 }
 
@@ -57,6 +66,11 @@
     text-align: center;
     padding: 0 8px;
     margin-bottom: 0;
+  }
+
+  @include mobile {
+    margin-bottom: 25px;
+    text-align: left;
   }
 }
 

@@ -25,6 +25,10 @@
     margin-bottom: 20px;
     font-weight: 800;
   }
+
+  @include mobile {
+    font-size: 35px;
+  }
 }
 
 .header__text {
@@ -36,6 +40,9 @@
     max-width: 700px;
   }
 
+  @include mobile {
+    max-width: 600px;
+  }
 }
 
 .header__btn {

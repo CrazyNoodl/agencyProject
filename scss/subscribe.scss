@@ -3,17 +3,51 @@
   text-transform: none;
   color: white;
   margin-bottom: 35px;
+
+  @include tablet {
+    margin-bottom: 25px;
+  }
+
 }
+
+.subscribe__text {
+  color: white;
+  margin-bottom: 60px;
+
+  @include tablet {
+    margin-bottom: 45px;
+  }
+
+}
+
+.subscribe__btn {
+  padding: 30px 60px;
+  text-transform: uppercase;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
 
 .subscribe__form {
   max-width: 770px;
   display: flex;
   margin: 0 auto;
+
+  @include mobile {
+    display: block;
+  }
 }
 
 .subscribe__input {
   flex: 1;
   padding-right: 25px;
+
+  @include mobile {
+    padding-right: 0;
+    margin-bottom: 25px;
+  }
 }
 
 .subscribe__email {
@@ -25,12 +59,3 @@
   border-radius: 5px;
 }
 
-.subscribe__text {
-  color: white;
-  margin-bottom: 60px;
-}
-
-.subscribe__btn {
-  padding: 30px 60px;
-  text-transform: uppercase;
-}
