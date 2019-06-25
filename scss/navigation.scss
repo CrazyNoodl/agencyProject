@@ -24,4 +24,9 @@
   &.active {
      background: red;
   }
+
+  @include mobile8p {
+     padding: 25px 10px 20px;
+  }
+
 }

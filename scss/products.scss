@@ -17,6 +17,11 @@
   @include tablet {
     margin-bottom: 45px;
   }
+
+  @include mobile8p {
+    margin-bottom: 25px;
+  }
+
 }
 
 .products__link {
@@ -47,6 +52,12 @@
     margin-right: 45px;
   }
 
+  @include mobile8p {
+    font-size: 11px;
+    margin-right: 10px;
+
+  }
+
 }
 
 .products__wrapper {
@@ -61,7 +72,11 @@
   padding: 0 8px;
 
   @include mobile {
-      width: 32%;
+    width: 32%;
+  }
+
+  @include mobile8p {
+    width: 50%;
   }
 
 }

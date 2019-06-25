@@ -15,3 +15,9 @@
   }
 }
 
+@mixin mobile8p {
+  @media (max-width: #{$mobile8p-max-width - 1}px) {
+    @content
+  }
+}
+

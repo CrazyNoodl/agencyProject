@@ -1,13 +1,29 @@
 /* Footer */
 .footer__inner {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: #b8b8b8;
+
+  @include mobile   {
+    display: block;
+  }
+
+}
+
+.copyright {
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .footer__list {
   display: flex;
   font-size: 36px;
+
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .footer__link {

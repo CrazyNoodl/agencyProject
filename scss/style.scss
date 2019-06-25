@@ -38,4 +38,8 @@ hr {
   width: 100%;
   margin: 0 auto;
   color: red;
+
+  @include mobile8p {
+    width: 90%;
+  }
 }

@@ -6,6 +6,10 @@
     padding: 70px 0;
   }
 
+  @include mobile8p {
+     padding: 50px 0;
+  }
+
   &--navigation {
     width: 100%;
     position: absolute;
@@ -26,10 +30,20 @@
     @include tablet {
       padding-top: 200px;
     }
+
+     @include mobile8p {
+      padding-top: 100px;
+    }
+
   }
 
   &--features {
     padding-bottom: 60px;
+
+
+    @include mobile8p {
+      padding-bottom: 30px;
+    }
   }
 
   &--team {
@@ -37,11 +51,7 @@
   }
 
   &--subscribe {
-<<<<<<< HEAD
     background: url(/img/mojave.png) center no-repeat;
-=======
-    background: url(../img/mojave.png) center no-repeat;
->>>>>>> 155889079bcc777f02060e8243a4cfee49222498
     background-size: cover;
     background-attachment: fixed;
   }
@@ -56,6 +66,7 @@
   }
 }
 
+
 .section--navigation.fixed {
   background-color: #313030;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -65,3 +76,4 @@
   left: 0;
   z-index: 1000;
 }
+

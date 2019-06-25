@@ -106,6 +106,10 @@
   position: relative;
   margin-bottom: 5px;
 
+  @include mobile8p {
+    width: 49%;
+  }
+
 }
 
 .other__img {

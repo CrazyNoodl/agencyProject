@@ -72,6 +72,12 @@
     margin-bottom: 25px;
     text-align: left;
   }
+
+  @include mobile8p {
+    width: 100%;
+    padding: 0;
+  }
+
 }
 
 .box__icon {
@@ -93,6 +99,11 @@
   @include tablet {
     font-size: 22px;
   }
+
+   @include mobile8p {
+    margin-bottom: 3px;
+  }
+
 }
 
 .box__text {
