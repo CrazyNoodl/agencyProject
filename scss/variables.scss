@@ -1,5 +1,18 @@
 // Responsive
 $tablet-max-width: 1024;
 $mobile-max-width: 768;
-$mobile8p-max-width: 415;
-$mobilese-max-width: 321;
+$mobile8p-max-width: 416;
+$mobilese-max-width: 320;
+
+
+
+// Colors
+$main-color: #ff2d2d; // red
+$bg-color: #f6f2f2; //grey
+$main-txt-color: rgba(0, 0, 0, 0.7); // black .7 opacity
+
+
+// Fonts
+$main-weight: 400;
+$bold-weight: 700;
+$main-size: 16px;

@@ -93,7 +93,7 @@
   border-radius: 10px;
 
   &:focus {
-    color: red;
+    color: $main-color;
   }
 
   &:focus::placeholder {
@@ -158,4 +158,8 @@
 
 .info__email {
   margin-bottom: 20px;
+
+    @include tablet {
+    font-size: 13px;
+  }
 }

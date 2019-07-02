@@ -14,7 +14,7 @@
   text-decoration: none;
 
   &:hover {
-    background: red;
+    background: $main-color;
   }
 
   &:focus {
@@ -22,7 +22,7 @@
   }
 
   &.active {
-     background: red;
+     background: $main-color;
   }
 
   @include mobile {

@@ -54,9 +54,9 @@
 }
 
 .features__btn {
-  color: red;
+  color: $main-color;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid $main-color;
 }
 
 .features__box {
@@ -88,7 +88,7 @@
 
 .box__icon {
   font-size: 40px;
-  color: red;
+  color: $main-color;
   margin-bottom: 25px;
   line-height: 0;
 

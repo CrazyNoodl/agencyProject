@@ -23,6 +23,10 @@
   margin-right: 75px;
   outline: 1px solid black;
 
+  @include tablet {
+    margin-right: 35px;
+  }
+
   @include mobile {
     margin-right: 0;
     margin: 0 0 15px;
@@ -126,7 +130,7 @@
 }
 
 .other__img {
-  outline: 1px solid red;
+  outline: 1px solid $main-color;
   max-width: 100%;
   height: auto;
 

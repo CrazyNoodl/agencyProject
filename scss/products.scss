@@ -14,7 +14,7 @@
   margin-bottom: 60px;
 
   @include tablet {
-      justify-content: space-around;
+    justify-content: space-around;
     margin-bottom: 35px;
   }
 
@@ -35,12 +35,12 @@
   }
 
   &:hover {
-    color: red;
+    color: $main-color;
     cursor: pointer;
   }
 
   &.mixitup-control-active {
-    color: red;
+    color: $main-color;
   }
 
   @include tablet {
@@ -70,7 +70,7 @@
   padding: 0 8px;
 
   @include mobile {
-     padding: 0 4px;
+    padding: 0 4px;
     width: 33%;
   }
 
@@ -89,5 +89,4 @@
   @include mobilese {
     margin-bottom: 10px;
   }
-
 }

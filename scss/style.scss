@@ -4,10 +4,10 @@
 
 body {
   @include main-font;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: $main-weight;
+  font-size: $main-size;
   line-height: 1.7;
-  color: rgba(0, 0, 0, 0.7);
+  color: $main-txt-color;
 
   @include mobilese {
     font-size: 14px;
@@ -43,9 +43,9 @@ hr {
   max-width: 1250px;
   width: 100%;
   margin: 0 auto;
-  color: red;
+  color: $main-color;
 
-  @include mobile8p {
-    width: 90%;
+  @include tablet {
+        width: 90%;
   }
 }
