@@ -3,17 +3,17 @@
 @import 'reset';
 
 body {
-  @include main-font;
-  font-weight: $main-weight;
-  font-size: $main-size;
-  line-height: 1.7;
-  color: $main-txt-color;
+    @include main-font;
 
-  @include mobilese {
-    font-size: 14px;
-    line-height: 1.4;
-  }
+    font-size: $main-size;
+    font-weight: $main-weight;
+    line-height: 1.7;
+    color: $main-txt-color;
 
+    @include mobilese {
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 @import 'section';
@@ -30,22 +30,20 @@ body {
 @import 'contacts';
 @import 'footer';
 
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
 hr {
-  border: none;
-  height: 1px;
-  background-color: gray;
-  max-width: 1250px;
-  width: 100%;
-  margin: 0 auto;
-  color: $main-color;
+    width: 100%;
+    max-width: 1250px;
+    height: 1px;
+    margin: 0 auto;
+    color: $main-color;
+    background-color: gray;
+    border: none;
 
-  @include tablet {
+    @include tablet {
         width: 90%;
-  }
+    }
 }

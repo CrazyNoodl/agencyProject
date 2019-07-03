@@ -1,78 +1,74 @@
 /* Header */
 .header__content {
-  margin-right: 10px;
-  margin-bottom: 60px;
+    margin-right: 10px;
+    margin-bottom: 60px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+    &:last-child {
+        margin-bottom: 0;
+    }
 
-  @include tablet {
-    text-align: center;
-    max-width: none;
-  }
+    @include tablet {
+        max-width: none;
+        text-align: center;
+    }
 }
 
 .header__title {
-  max-width: 590px;
-  font-size: 60px;
-  margin-bottom: 30px;
-  font-weight: 800;
-  color: black;
-  letter-spacing: 0.1em;
-
-  @include tablet {
-    max-width: none;
-    font-size: 45px;
-    margin-bottom: 20px;
+    max-width: 590px;
+    margin-bottom: 30px;
+    font-size: 60px;
     font-weight: 800;
-  }
+    color: black;
+    letter-spacing: .1em;
 
-  @include mobile {
-    font-size: 35px;
-  }
+    @include tablet {
+        max-width: none;
+        margin-bottom: 20px;
+        font-size: 45px;
+        font-weight: 800;
+    }
 
-  @include mobile8p {
-    font-size: 30px;
-  }
+    @include mobile {
+        font-size: 35px;
+    }
 
-  @include mobilese {
-    font-size: 25px;
-  }
+    @include mobile8p {
+        font-size: 30px;
+    }
 
+    @include mobilese {
+        font-size: 25px;
+    }
 }
 
 .header__text {
-  max-width: 500px;
-  margin-bottom: 45px;
+    max-width: 500px;
+    margin-bottom: 45px;
 
-  @include tablet {
-    margin: 0 auto 35px;
-    max-width: 700px;
-  }
+    @include tablet {
+        max-width: 700px;
+        margin: 0 auto 35px;
+    }
 
-  @include mobile {
-    max-width: 600px;
-  }
+    @include mobile {
+        max-width: 600px;
+    }
 }
 
 .header__btn {
-  font-weight: $bold-weight;
+    font-weight: $bold-weight;
 }
 
-
 .header__video {
-  width: 45%;
+    width: 45%;
+    box-shadow: 0 0 76px 8px rgba(0, 0, 0, .5);
 
-  box-shadow: 0px 0px 76px 8px rgba(0, 0, 0, 0.5);
+    @include tablet {
+        width: 75%;
+    }
 
-  @include tablet {
-    width: 75%;
-  }
-
-  @include mobilese {
-     width: 100%;
-    height: auto;
-  }
-
+    @include mobilese {
+        width: 100%;
+        height: auto;
+    }
 }

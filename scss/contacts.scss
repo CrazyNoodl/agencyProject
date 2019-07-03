@@ -1,165 +1,158 @@
 .contact__content {
-  max-width: 725px;
+    max-width: 725px;
 
-  @include tablet {
-    max-width: 460px;
-  }
-
+    @include tablet {
+        max-width: 460px;
+    }
 }
 
 .contact__title {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 
-  @include tablet {
-    margin-bottom: 30px;
-  }
+    @include tablet {
+        margin-bottom: 30px;
+    }
 }
 
 .contact__btn {
-
-  @include mobile {
-    margin-bottom: 25px;
-  }
+    @include mobile {
+        margin-bottom: 25px;
+    }
 }
 
 .contact__outter {
-  position: relative;
+    position: relative;
 }
 
 .contact__outter:after {
-  display: block;
-  position: absolute;
-  background: #313030;
-  content: "";
-  top: 0;
-  bottom: 0;
-  left: calc(100% / 2 + (130px * 0.58 + 80px));
-  right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: calc(100% / 2 + (130px * 0.58 + 80px));
+    display: block;
+    content: "";
+    background: #313030;
 
-  @include mobile {
-    display: none;
-  }
-
+    @include mobile {
+        display: none;
+    }
 }
 
 .contact__inner {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .contact__form {
-  width: 58%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 58%;
 
-  @include mobile {
-    display: block;
-    width: 100%;
-  }
-
+    @include mobile {
+        display: block;
+        width: 100%;
+    }
 }
 
 .form__input {
-  max-width: 340px;
-  width: 47%;
-  margin-bottom: 60px;
+    width: 47%;
+    max-width: 340px;
+    margin-bottom: 60px;
 
-  @include tablet {
-    margin-bottom: 45px;
-  }
+    @include tablet {
+        margin-bottom: 45px;
+    }
 
-  @include mobile {
-    width: 100%;
-    max-width: none;
-    margin-bottom: 25px;
-  }
+    @include mobile {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 25px;
+    }
 
-  @include mobilese {
+    @include mobilese {
         margin-bottom: 10px;
-  }
-
+    }
 }
 
 .form__name,
 .form__email {
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  background: #e5e5e5;
-  padding: 30px 50px;
-  border-radius: 10px;
+    width: 100%;
+    padding: 30px 50px;
+    font-size: 18px;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 10px;
 
-  &:focus {
-    color: $main-color;
-  }
+    &:focus {
+        color: $main-color;
+    }
 
-  &:focus::placeholder {
-    color: transparent;
-  }
+    &:focus::placeholder {
+        color: transparent;
+    }
 }
 
 .contact-area__input {
-  width: 100%;
+    width: 100%;
 }
 
 .contact__textarea {
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  background: #e5e5e5;
-  padding: 30px 50px;
-  border-radius: 10px;
-  margin-bottom: 60px;
-  resize: none;
+    width: 100%;
+    padding: 30px 50px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    resize: none;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 10px;
 
-  @include tablet {
-    margin-bottom: 45px;
-  }
+    @include tablet {
+        margin-bottom: 45px;
+    }
 
-  @include mobile {
-    margin-bottom: 0;
-  }
-
+    @include mobile {
+        margin-bottom: 0;
+    }
 }
 
 .contact__info {
-  width: 42%;
-  color: rgba(255, 255, 255, .8);
-  padding-left: 160px;
-  display: flex;
-  flex-direction: column;
-  padding-top: 190px;
-  z-index: 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    padding-top: 190px;
+    padding-left: 160px;
+    color: rgba(255, 255, 255, .8);
 
-  @include tablet {
-    padding-top: 135px;
-  }
+    @include tablet {
+        padding-top: 135px;
+    }
 
-  @include mobile {
-    background: #313030;
-    width: 100%;
-    text-align: center;
-    padding: 50px;
-  }
-
+    @include mobile {
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        background: #313030;
+    }
 }
 
 .info__title {
-  font-size: 18px;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .info__address {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .info__email {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
     @include tablet {
-    font-size: 13px;
-  }
+        font-size: 13px;
+    }
 }

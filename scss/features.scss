@@ -1,122 +1,117 @@
 .features {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  justify-content: space-between;
-
-  @include tablet {
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-
-  @include mobile {
+    display: flex;
     flex-wrap: wrap;
-  }
+    justify-content: space-between;
+    width: 50%;
+
+    @include tablet {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
 }
 
 .features__container {
-  display: flex;
+    display: flex;
+    justify-content: space-between;
 
-  justify-content: space-between;
-
-  @include tablet {
-      flex-wrap: wrap;
-    justify-content: center;
-  }
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .features__content {
-  max-width: 500px;
-  margin-bottom: 55px;
+    max-width: 500px;
+    margin-bottom: 55px;
 
-  @include tablet {
-    max-width: 700px;
-    text-align: center;
-  }
+    @include tablet {
+        max-width: 700px;
+        text-align: center;
+    }
 }
 
 .features__title {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 
-  @include tablet {
-    margin-bottom: 25px;
-  }
-
+    @include tablet {
+        margin-bottom: 25px;
+    }
 }
 
 .features__text {
-  margin-bottom: 55px;
+    margin-bottom: 55px;
 
-  @include tablet {
-    max-width: 550px;
-    margin: 0 auto 35px;
-  }
+    @include tablet {
+        max-width: 550px;
+        margin: 0 auto 35px;
+    }
 }
 
 .features__btn {
-  color: $main-color;
-  background-color: transparent;
-  border: 1px solid $main-color;
+    color: $main-color;
+    background-color: transparent;
+    border: 1px solid $main-color;
 }
 
 .features__box {
-  width: calc(50% - 25px);
-  margin-bottom: 50px;
+    width: calc(50% - 25px);
+    margin-bottom: 50px;
 
-  @include tablet {
-    text-align: center;
-    padding: 0 8px;
-    margin-bottom: 0;
-  }
+    @include tablet {
+        padding: 0 8px;
+        margin-bottom: 0;
+        text-align: center;
+    }
 
-  @include mobile {
-    margin-bottom: 25px;
-    text-align: left;
-  }
+    @include mobile {
+        margin-bottom: 25px;
+        text-align: left;
+    }
 
-  @include mobile8p {
-    width: 100%;
-    padding: 0;
-  }
+    @include mobile8p {
+        width: 100%;
+        padding: 0;
+    }
 
-  @include mobilese {
-
-    text-align: center;
-  }
-
+    @include mobilese {
+        text-align: center;
+    }
 }
 
 .box__icon {
-  font-size: 40px;
-  color: $main-color;
-  margin-bottom: 25px;
-  line-height: 0;
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 0;
+    color: $main-color;
 
-  @include tablet {
-    margin-bottom: 10px;
-  }
+    @include tablet {
+        margin-bottom: 10px;
+    }
 }
 
 .box__title {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 17px;
+    margin-bottom: 17px;
+    font-size: 24px;
+    font-weight: 600;
 
-  @include tablet {
-    font-size: 22px;
-  }
+    @include tablet {
+        font-size: 22px;
+    }
 
-   @include mobile8p {
-    margin-bottom: 3px;
-  }
-
+    @include mobile8p {
+        margin-bottom: 3px;
+    }
 }
 
 .box__text {
-  line-height: 1.7;
+    line-height: 1.7;
 
-  @include tablet {
-    line-height: 1.5;
-    font-size: 15px;
-  }
+    @include tablet {
+        font-size: 15px;
+        line-height: 1.5;
+    }
 }

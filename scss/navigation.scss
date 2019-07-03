@@ -1,36 +1,35 @@
 /* Navigation */
 
 .nav__menu {
-  display: flex;
-  justify-content: center;
-  background-color: #313030;
+    display: flex;
+    justify-content: center;
+    background-color: #313030;
 }
 
 .nav__link {
-  display: inline-block;
-  padding: 45px 25px 35px;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
+    display: inline-block;
+    padding: 45px 25px 35px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 
-  &:hover {
-    background: $main-color;
-  }
+    &:hover {
+        background: $main-color;
+    }
 
-  &:focus {
-    outline: none;
-  }
+    &:focus {
+        outline: none;
+    }
 
-  &.active {
-     background: $main-color;
-  }
+    &.active {
+        background: $main-color;
+    }
 
-  @include mobile {
-    font-size: 12px;
-  }
+    @include mobile {
+        font-size: 12px;
+    }
 
-  @include mobile8p {
-     padding: 25px 10px 20px;
-  }
-
+    @include mobile8p {
+        padding: 25px 10px 20px;
+    }
 }

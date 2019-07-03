@@ -1,26 +1,26 @@
 /* Container */
 .container {
-  max-width: 1300px;
-  width: 100%;
-  padding: 0 25px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 25px;
+    margin: 0 auto;
 
-  @include mobile8p {
-    padding: 0 15px;
-  }
+    @include mobile8p {
+        padding: 0 15px;
+    }
 }
 
 .container--navigation {
-  padding: 0;
+    padding: 0;
 }
 
 .container__header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
-  @include tablet {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

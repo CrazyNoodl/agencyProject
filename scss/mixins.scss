@@ -1,30 +1,28 @@
 /* Mixins */
 @mixin main-font {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 @mixin tablet {
-  @media (max-width: #{$tablet-max-width - 1}px) {
-    @content;
-  }
+    @media (max-width: #{$tablet-max-width - 1}px) {
+        @content;
+    }
 }
 
 @mixin mobile {
-  @media (max-width: #{$mobile-max-width - 1}px) {
-    @content;
-  }
+    @media (max-width: #{$mobile-max-width - 1}px) {
+        @content;
+    }
 }
 
 @mixin mobile8p {
-  @media (max-width: #{$mobile8p-max-width - 1}px) {
-    @content
-  }
+    @media (max-width: #{$mobile8p-max-width - 1}px) {
+        @content;
+    }
 }
 
 @mixin mobilese {
-  @media (max-width: #{$mobilese-max-width - 1}px) {
-    @content
-  }
+    @media (max-width: #{$mobilese-max-width - 1}px) {
+        @content;
+    }
 }
-
-

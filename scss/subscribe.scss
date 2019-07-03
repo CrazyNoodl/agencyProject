@@ -1,61 +1,57 @@
-/*Subscribe*/
+/* Subscribe */
 .subscribe__title {
-  text-transform: none;
-  color: white;
-  margin-bottom: 35px;
+    margin-bottom: 35px;
+    color: white;
+    text-transform: none;
 
-  @include tablet {
-    margin-bottom: 25px;
-  }
-
+    @include tablet {
+        margin-bottom: 25px;
+    }
 }
 
 .subscribe__text {
-  color: white;
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    color: white;
 
-  @include tablet {
-    margin-bottom: 45px;
-  }
-
+    @include tablet {
+        margin-bottom: 45px;
+    }
 }
 
 .subscribe__btn {
-  padding: 30px 60px;
-  text-transform: uppercase;
+    padding: 30px 60px;
+    text-transform: uppercase;
 
-  @include mobile {
-    width: 100%;
-  }
+    @include mobile {
+        width: 100%;
+    }
 }
 
-
 .subscribe__form {
-  max-width: 770px;
-  display: flex;
-  margin: 0 auto;
+    display: flex;
+    max-width: 770px;
+    margin: 0 auto;
 
-  @include mobile {
-    display: block;
-  }
+    @include mobile {
+        display: block;
+    }
 }
 
 .subscribe__input {
-  flex: 1;
-  padding-right: 25px;
+    flex: 1;
+    padding-right: 25px;
 
-  @include mobile {
-    padding-right: 0;
-    margin-bottom: 25px;
-  }
+    @include mobile {
+        padding-right: 0;
+        margin-bottom: 25px;
+    }
 }
 
 .subscribe__email {
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  background: white;
-  padding: 30px 35px;
-  border-radius: 5px;
+    width: 100%;
+    padding: 30px 35px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    border-radius: 5px;
 }
-

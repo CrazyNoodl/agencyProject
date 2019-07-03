@@ -1,92 +1,90 @@
-/* Products*/
+/* Products */
 .products__content {
-  max-width: 500px;
-  margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .products__title {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .products__nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 
-  @include tablet {
-    justify-content: space-around;
-    margin-bottom: 35px;
-  }
+    @include tablet {
+        justify-content: space-around;
+        margin-bottom: 35px;
+    }
 
-  @include mobile8p {
-    margin-bottom: 25px;
-  }
-
+    @include mobile8p {
+        margin-bottom: 25px;
+    }
 }
 
 .products__link {
-  font-weight: 600;
-  font-size: 22px;
-  text-transform: uppercase;
-  margin-right: 60px;
+    margin-right: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 
-  &:hover {
-    color: $main-color;
-    cursor: pointer;
-  }
+    &:hover {
+        color: $main-color;
+        cursor: pointer;
+    }
 
-  &.mixitup-control-active {
-    color: $main-color;
-  }
+    &.mixitup-control-active {
+        color: $main-color;
+    }
 
-  @include tablet {
-    font-size: 15px;
-  }
+    @include tablet {
+        font-size: 15px;
+    }
 
-  @include mobile {
-    font-size: 13px;
-    margin-right: 15px;
-  }
+    @include mobile {
+        margin-right: 15px;
+        font-size: 13px;
+    }
 
-  @include mobile8p {
-    font-size: 11px;
-    margin-right: 10px;
-  }
+    @include mobile8p {
+        margin-right: 10px;
+        font-size: 11px;
+    }
 }
 
 .products__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 0 -8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -8px;
 }
 
 .products__item {
-  width: 25%;
-  padding: 0 8px;
+    width: 25%;
+    padding: 0 8px;
 
-  @include mobile {
-    padding: 0 4px;
-    width: 33%;
-  }
+    @include mobile {
+        width: 33%;
+        padding: 0 4px;
+    }
 
-  @include mobile8p {
-    width: 50%;
-  }
-
+    @include mobile8p {
+        width: 50%;
+    }
 }
 
 .products__img {
-  outline: 1px solid black;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    outline: 1px solid black;
 
-  @include mobilese {
-    margin-bottom: 10px;
-  }
+    @include mobilese {
+        margin-bottom: 10px;
+    }
 }
