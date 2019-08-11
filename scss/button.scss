@@ -1,4 +1,4 @@
-.btn {
+.btn-main {
     display: inline-block;
     padding: 10px 60px;
     font-size: 18px;
@@ -10,14 +10,14 @@
     }
 }
 
-.btn_accent {
+.btn-accent {
     color: white;
     background-color: $main-color;
     border: none;
     transition: .2s;
 }
 
-.btn_full {
+.btn-full {
     width: 100%;
     padding: 30px 60px;
     text-transform: uppercase;
