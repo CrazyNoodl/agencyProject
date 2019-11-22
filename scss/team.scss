@@ -1,154 +1,153 @@
 /* team */
-
 .team__content {
-    max-width: 450px;
+  max-width: 450px;
 }
 
 .team__title {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .employers {
-    display: flex;
+  display: flex;
 
-    @include mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .employers__photo {
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-    margin-right: 75px;
-    outline: 1px solid black;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  margin-right: 75px;
+  outline: 1px solid black;
 
-    @include tablet {
-        margin-right: 35px;
-    }
+  @include tablet {
+    margin-right: 35px;
+  }
 
-    @include mobile {
-        margin: 0 0 15px;
-    }
+  @include mobile {
+    margin: 0 0 15px;
+  }
 }
 
 .employers__content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .employers__inner {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-between;
-    max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 630px;
 
-    @include mobile {
-        align-items: center;
-        margin: 0 auto;
-        text-align: center;
-    }
+  @include mobile {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .employers__title {
-    font-size: 30px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
 
-    @include mobile {
-        font-size: 40px;
-    }
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 .employers__social {
-    display: flex;
+  display: flex;
 
-    @include mobile {
-        padding-top: 15px;
-    }
+  @include mobile {
+    padding-top: 15px;
+  }
 }
 
 .social__list {
-    margin-right: 30px;
+  margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .employers__other {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 65px;
 
-    @include tablet {
-        padding-top: 55px;
-    }
+  @include tablet {
+    padding-top: 55px;
+  }
 
-    @include mobile {
-        padding-top: 25px;
-    }
+  @include mobile {
+    padding-top: 25px;
+  }
 
-    @include mobilese {
-        justify-content: center;
-    }
+  @include mobilese {
+    justify-content: center;
+  }
 }
 
 .other__item {
-    position: relative;
-    width: 24%;
-    margin-bottom: 5px;
+  position: relative;
+  width: 24%;
+  margin-bottom: 5px;
 
-    @include mobile8p {
-        width: 49%;
-    }
+  @include mobile8p {
+    width: 49%;
+  }
 
-    @include mobilese {
-        width: 100%;
-    }
+  @include mobilese {
+    width: 100%;
+  }
 }
 
 .other__img {
-    max-width: 100%;
-    height: auto;
-    outline: 1px solid $main-color;
+  max-width: 100%;
+  height: auto;
+  outline: 1px solid black;
 
-    @include mobilese {
-        width: 100%;
-    }
+  @include mobilese {
+    width: 100%;
+  }
 }
 
 .other__name {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 0;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity .2s;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity .2s;
 }
 
 .other__item:hover .other__name {
-    opacity: 1;
+  opacity: 1;
 }

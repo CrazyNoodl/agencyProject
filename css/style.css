@@ -810,7 +810,7 @@ body {
 .other__img {
   max-width: 100%;
   height: auto;
-  outline: 1px solid #ff2d2d; }
+  outline: 1px solid black; }
   @media (max-width: 319px) {
     .other__img {
       width: 100%; } }

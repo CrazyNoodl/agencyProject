@@ -4,34 +4,34 @@ const browserSync = require('browser-sync').create();
 const gulpStylelint = require('gulp-stylelint');
 
 function style() {
-    return gulp.src('./scss/style.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./css'))
-        .pipe(browserSync.stream())
+	return gulp.src('./scss/style.scss')
+		.pipe(sass())
+		.pipe(gulp.dest('./css'))
+		.pipe(browserSync.stream())
 }
 
 
 function lintCss() {
-    return gulp.src('./scss/**/*.scss')
-        .pipe(gulpStylelint({
-            reporters: [
-                {
-                    formatter: 'string',
-                    console: true
-              }
-      ]
-        }));
+	return gulp.src('./scss/**/*.scss')
+		.pipe(gulpStylelint({
+			reporters: [
+				{
+					formatter: 'string',
+					console: true
+				}
+			]
+		}));
 }
 
 function watch() {
-    browserSync.init({
+	browserSync.init({
 
-        server: {
-            baseDir: './'
-        }
-    })
-    gulp.watch('./scss/**/*.scss', style);
-    gulp.watch('./*.html').on('change', browserSync.reload);
+		server: {
+			baseDir: './'
+		}
+	})
+	gulp.watch('./scss/**/*.scss', style);
+	gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
 
