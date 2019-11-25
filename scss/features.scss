@@ -55,6 +55,10 @@
 	color: $main-color;
 	background-color: transparent;
 	border: 1px solid $main-color;
+
+	&:hover {
+		background-color: darken(white, 5%)
+}
 }
 
 .features__box {
