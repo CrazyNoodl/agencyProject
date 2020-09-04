@@ -18,6 +18,6 @@
     "stylelint-config-standard": "^18.3.0"
   },
   "dependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   }
 }
